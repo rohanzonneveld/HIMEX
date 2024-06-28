@@ -31,9 +31,9 @@ f = lambda x: model_predict(x)
 # load the data
 dataset = 'SST-2'
 if dataset == 'IMDB':
-    X_test = pd.read_csv('dataset\IMDB/test.tsv', sep='\t', header=0)
+    X_test = pd.read_csv('dataset/IMDB/test.tsv', sep='\t', header=0)
 elif dataset == 'SST-2':
-    X_test = pd.read_parquet('dataset\SST-2/test-00000-of-00001.parquet')
+    X_test = pd.read_parquet('dataset/SST-2/test-00000-of-00001.parquet')
 
 
 for i in range(len(X_test['sentence'])):
